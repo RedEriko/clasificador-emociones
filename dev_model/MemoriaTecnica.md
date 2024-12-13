@@ -1,11 +1,14 @@
 # Memoria Técnica
 
 ## Portada
-- **Nombre del Proyecto**: Clasificador de Malaria
-- **Fecha**: 21 de noviembre de 2024.
-- **Integrantes**:  
-  - Francisco Perez Carbajal
-  - Jose Eduardo Rodriguez Barrios
+- **Nombre del Proyecto**: Clasificador de Emociones
+- **Fecha**: 13 Diciembre 2024
+- **Integrantes**:
+- Juárez Millán Ángel Andrés
+- Lara Bustillos Damaris Aylin
+- Evaristo Ramírez Erik
+
+ 
 
 ![Mosquito](../images/descarga.jpeg)
 
