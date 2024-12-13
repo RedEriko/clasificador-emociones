@@ -10,7 +10,7 @@
 
  
 
-![Mosquito](../images/descarga.jpeg)
+![Emociones](../images/portada-el-cuidado-de-las-emociones-basicas.jpg)
 
 ## Índice
 - [Portada](#portada)
