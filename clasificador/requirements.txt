@@ -1,0 +1,11 @@
+tensorflow==2.13.0  # La versión que estés utilizando
+pandas==2.0.0       # La versión de pandas que estés utilizando
+matplotlib==3.7.1    # Para visualización de gráficos
+opencv-python==4.7.0 # Procesamiento de imágenes
+scikit-learn==1.2.0  # Para las métricas y procesamiento de datos
+imgaug==0.4.0        # Para augmentación de imágenes
+seaborn==0.12.2      # Para visualización estadística
+flask==2.2.3         # Para el desarrollo de la API en Flask (si usas Flask)
+fastapi==0.95.0      # Si decides usar FastAPI en lugar de Flask
+uvicorn==0.22.0      # Servidor ASGI para FastAPI
+python-dotenv==1.0.0 # Para gestionar variables de entorno, si es necesario
