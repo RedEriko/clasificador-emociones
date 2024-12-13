@@ -1,5 +1,5 @@
 # Ignorar el entorno virtual
-clasificador/
+clasificador/Lib
 
 # Archivos del sistema operativo (Mac, Windows, etc.)
 .DS_Store
