@@ -41,13 +41,12 @@ A pesar de estos beneficios, el desarrollo de clasificadores de emociones plante
 
 ## Fuentes de información y procedimientos aplicados
 
-El conjunto de datos, descargado de Kaggle
-
+ ![Datos por categoria](../images/Grafica_de_datos.png)
 
 ## Pipeline de Preparación
 ### 1. Crear Etiquetas 
-- Clasificamos las imágenes basándonos en si contienen al menos un trofozoíto.
-  ![Distribucion binaria](../images/proportion.png)
+- Clasificamos las imágenes 
+ 
 ### 2. División del Conjunto de Datos
 - Los datos se dividen en entrenamiento y validación con proporciones del 80% y 20% respectivamente.
 
