@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API de Reconocimiento de Emociones</title>
-    <link rel="stylesheet" href="/Frontend/style.css">
+    <title>Reconocimiento de Emociones</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Reconocimiento de Emociones</h1>
-        <p>Esta API permite reconocer emociones a partir de imágenes faciales.</p>
-        <p>Sube una imagen y nuestro modelo predecirá la emoción que se muestra.</p>
-        <div class="form-container">
-            <form id="image-form" action="/predict" method="post" enctype="multipart/form-data">
-                <label for="file">Selecciona una imagen:</label>
-                <input type="file" name="file" id="file" required>
-                <button type="submit">Predecir emoción</button>
-            </form>
-            <div id="result" class="result">
-                <p id="prediction-text"></p>
-                <img id="image-preview" class="image-preview" src="" alt="Imagen subida">
-            </div>
+        <p>Sube una imagen y nuestro modelo predice la emoción que muestra.</p>
+        <input type="file" id="image-input" accept="image/*" required>
+        <img id="image-preview" class="image-preview" src="" alt="Vista previa de la imagen">
+        <button id="predict-btn" style="display:none;">Predecir emoción</button>
+        <div id="loader" style="display:none;">Cargando...</div>
+        <div id="result" class="result" style="display:none;">
+            <p id="prediction-result"></p>
         </div>
     </div>
 
-    <script src="/Frontend/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

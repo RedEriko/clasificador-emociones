@@ -1,66 +1,44 @@
-from fastapi import FastAPI, UploadFile, File
-from fastapi.responses import HTMLResponse, JSONResponse
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
-import numpy as np
+from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from models.emotion_classifier import EmotionClassifier
 import os
+import shutil
 from pathlib import Path
+from PIL import Image
+from io import BytesIO
 
-# Creamos la aplicación de FastAPI
+# Inicializa el clasificador
+classifier = EmotionClassifier("path_to_your_model/Clasificador_emociones.h5")
+
+# Inicializa API
 app = FastAPI()
 
-# Cargamos el modelo
-model = load_model('dev_model/Clasificador_emociones (4).h5')
+# Configuración de CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-# Mapeo de las etiquetas a nombres de emociones
-emotion_labels = ['Enojo', 'Neutral', 'Disgusto', 'Miedo', 'Felicidad', 'Tristeza', 'Sorpresa']
+@app.post("/predict", tags=["Reconocimiento de emociones"])
+async def predict_image(file: UploadFile = File(...)):
+    try:
+        # Guardar la imagen temporalmente
+        file_location = Path("uploads") / file.filename
+        with open(file_location, "wb") as f:
+            shutil.copyfileobj(file.file, f)
 
-# Ruta para servir el HTML principal
-@app.get("/", response_class=HTMLResponse)
-async def home():
-    html_content = Path('Frontend/index.html').read_text()
-    return html_content
+        # Preprocesar la imagen
+        img_array = classifier.preprocess_image(str(file_location))
 
-# Ruta para la predicción de emociones
-@app.post("/predict")
-async def predict(file: UploadFile = File(...)):
-    # Guardamos la imagen en el directorio 'static/uploads'
-    uploads_dir = Path('static/uploads')
-    uploads_dir.mkdir(parents=True, exist_ok=True)
-    file_path = uploads_dir / file.filename
+        # Realizar predicción
+        result = classifier.predict(img_array)
 
-    with open(file_path, 'wb') as buffer:
-        buffer.write(await file.read())
+        # Eliminar archivo temporal
+        os.remove(file_location)
 
-    # Preprocesamos la imagen y hacemos la predicción
-    predicted_emotion = predict_image(file_path)
-
-    # Enviamos la respuesta con la emoción predicha y la URL de la imagen
-    image_url = f"/static/uploads/{file.filename}"
-    return JSONResponse({
-        'prediction': predicted_emotion,
-        'image_url': image_url
-    })
-
-# Función para preprocesar la imagen y hacer la predicción
-def predict_image(file_path):
-    # Cargamos la imagen y preprocesamos para el modelo
-    img = image.load_img(file_path, target_size=(48, 48), color_mode="grayscale")
-    img_array = image.img_to_array(img)
-    img_array = np.expand_dims(img_array, axis=0)
-    img_array /= 255.0  # Normalizar la imagen
-
-    # Hacemos la predicción
-    predictions = model.predict(img_array)
-    predicted_class = np.argmax(predictions)
-
-    # Obtenemos la etiqueta de la emoción
-    return emotion_labels[predicted_class]
-
-# Configuración de la carpeta estática
-@app.get("/static/{file_path:path}")
-async def serve_static(file_path: str):
-    file_path = Path(f"static/{file_path}")
-    if file_path.exists():
-        return file_path.read_bytes()
-    return JSONResponse({"error": "File not found"}, status_code=404)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
