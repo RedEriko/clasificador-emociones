@@ -25,3 +25,13 @@
 - [Conclusiones generales](#conclusiones-generales)
 - [Anexos](#anexos)
 - [Glosario](#glosario)
+
+## Alcance del proyecto
+
+### Objetivo
+- Construir un modelo capaz de clasificar emociones comunes como alegría, tristeza, enojo, sorpresa, miedo y neutralidad.
+- Evaluar el modelo en un conjunto de datos estándar y analizar su desempeño.
+
+### Introducción
+
+
