@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de Emociones</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reconocimiento de Emociones</h1>
+        <p>Sube una imagen para predecir la emoción de la persona.</p>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="file">Selecciona una imagen:</label>
+            <input type="file" name="file" id="file" required>
+            <button type="submit">Predecir Emoción</button>
+        </form>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
