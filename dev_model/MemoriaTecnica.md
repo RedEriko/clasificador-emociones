@@ -41,7 +41,7 @@ A pesar de estos beneficios, el desarrollo de clasificadores de emociones plante
 
 ## Fuentes de información y procedimientos aplicados
 
- ![Datos por categoria](../images/Screenshot 2024-12-13 at 13.41.16.png)
+ ![Datos por categoria](../images/ Screenshot 2024-12-13 at 13.41.16.png)
 
 ## Pipeline de Preparación
 ### 1. Crear Etiquetas 
