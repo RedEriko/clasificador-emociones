@@ -33,5 +33,8 @@
 - Evaluar el modelo en un conjunto de datos estándar y analizar su desempeño.
 
 ### Introducción
+El análisis de emociones a partir de expresiones faciales ha capturado un interés creciente en los últimos años debido a sus aplicaciones prácticas y su relevancia en la interacción humano-computadora. Las emociones no solo son un componente esencial de la comunicación no verbal, sino que también pueden revelar el estado mental y los sentimientos de una persona, lo que resulta invaluable en una variedad de contextos.
 
+Desde asistentes virtuales más empáticos hasta herramientas de diagnóstico en salud mental, el reconocimiento de emociones tiene aplicaciones que abarcan sectores como la atención al cliente, la educación, la psicología y la seguridad. Por ejemplo, en la educación, los sistemas de aprendizaje pueden adaptarse dinámicamente según las emociones del estudiante, mientras que en la atención médica, se pueden diseñar soluciones para detectar signos tempranos de depresión o ansiedad.
 
+A pesar de estos beneficios, el desarrollo de clasificadores de emociones plantea varios desafíos. Factores como las diferencias culturales en la expresión de emociones, las variaciones en condiciones de iluminación y pose en las imágenes, así como la necesidad de equilibrar clases desproporcionadas en los conjuntos de datos, complican la tarea.
