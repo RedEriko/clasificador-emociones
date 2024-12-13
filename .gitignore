@@ -1,0 +1,19 @@
+# Ignorar el entorno virtual
+Lib
+
+# Archivos del sistema operativo (Mac, Windows, etc.)
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de editor (VSCode)
+.vscode/
+
+# Archivos de dependencias
+*.pyc
+__pycache__/
+
+# Archivos de logs
+*.log
+
+#Archivos .h5
+*.h5

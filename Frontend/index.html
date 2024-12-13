@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Reconocimiento de Emociones</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reconocimiento de Emociones</h1>
+        <p>Esta API permite reconocer emociones a partir de imágenes faciales.</p>
+        <p>Sube una imagen y nuestro modelo predecirá la emoción que se muestra.</p>
+        <div class="form-container">
+            <form id="image-form" action="/predict" method="post" enctype="multipart/form-data">
+                <label for="file">Selecciona una imagen:</label>
+                <input type="file" name="file" id="file" required>
+                <button type="submit">Predecir emoción</button>
+            </form>
+            <div id="result" class="result">
+                <p id="prediction-text"></p>
+                <img id="image-preview" class="image-preview" src="" alt="Imagen subida">
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
