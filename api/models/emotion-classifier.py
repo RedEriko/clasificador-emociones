@@ -7,7 +7,7 @@ class EmotionClassifier:
         """
         Inicializa el clasificador cargando el modelo de emociones.
 
-        :param model_path: Ruta del archivo del modelo (.h5).
+        :param model_path: clasificador-emociones\clasificador\api\models\Clasificador_emociones_new.h5
         """
         self.model = tf.keras.models.load_model(model_path)
 

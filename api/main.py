@@ -8,7 +8,7 @@ from PIL import Image
 from io import BytesIO
 
 # Inicializa el clasificador
-classifier = EmotionClassifier("path_to_your_model/Clasificador_emociones.h5")
+classifier = EmotionClassifier("clasificador-emociones\clasificador\api\models\Clasificador_emociones_new.h5")
 
 # Inicializa API
 app = FastAPI()
