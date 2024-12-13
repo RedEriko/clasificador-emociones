@@ -38,3 +38,24 @@ El análisis de emociones a partir de expresiones faciales ha capturado un inter
 Desde asistentes virtuales más empáticos hasta herramientas de diagnóstico en salud mental, el reconocimiento de emociones tiene aplicaciones que abarcan sectores como la atención al cliente, la educación, la psicología y la seguridad. Por ejemplo, en la educación, los sistemas de aprendizaje pueden adaptarse dinámicamente según las emociones del estudiante, mientras que en la atención médica, se pueden diseñar soluciones para detectar signos tempranos de depresión o ansiedad.
 
 A pesar de estos beneficios, el desarrollo de clasificadores de emociones plantea varios desafíos. Factores como las diferencias culturales en la expresión de emociones, las variaciones en condiciones de iluminación y pose en las imágenes, así como la necesidad de equilibrar clases desproporcionadas en los conjuntos de datos, complican la tarea.
+
+## Fuentes de información y procedimientos aplicados
+
+El conjunto de datos, descargado de Kaggle
+
+
+## Pipeline de Preparación
+### 1. Crear Etiquetas 
+- Clasificamos las imágenes basándonos en si contienen al menos un trofozoíto.
+  ![Distribucion binaria](../images/proportion.png)
+### 2. División del Conjunto de Datos
+- Los datos se dividen en entrenamiento y validación con proporciones del 80% y 20% respectivamente.
+
+  | Conjunto         | Cantidad de Imágenes |
+  |-------------------|----------------------|
+  | Entrenamiento     | 2,197               |
+  | Validación        | 550                 |
+  
+
+  - **Total de imágenes:** 2,747
+  - **Etiquetas:**
