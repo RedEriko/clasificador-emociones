@@ -4,9 +4,9 @@
 - **Nombre del Proyecto**: Clasificador de Emociones
 - **Fecha**: 13 Diciembre 2024
 - **Integrantes**:
-- Juárez Millán Ángel Andrés
-- Lara Bustillos Damaris Aylin
-- Evaristo Ramírez Erik
+  - Juárez Millán Ángel Andrés
+  - Lara Bustillos Damaris Aylin
+  - Evaristo Ramírez Erik
 
  
 
