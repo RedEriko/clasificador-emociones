@@ -1,0 +1,27 @@
+# Entornos virtuales
+venv/
+env/
+.env/
+
+# Archivos generados por Python
+__pycache__/
+*.pyc
+
+# Archivos de configuración de editor
+.vscode/
+.idea/
+*.swp
+
+# Archivos de dependencias y registros
+*.egg-info/
+*.log
+*.sqlite3
+
+# Archivos de base de datos locales
+*.db
+
+# Archivos de compilación
+build/
+dist/
+
+*.h5
