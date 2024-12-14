@@ -101,6 +101,10 @@ La Clase 6 tiene el mejor rendimiento en términos de precisión, con 1309 predi
 
 ![Matriz de confusión](../images/matriz_confusion.png)
 
+Las métricas obtenidas después de ajustar los umbrales muestran una mejora en el rendimiento del modelo, con resultados más balanceados entre precisión y recall.
+
+
+
 ## Conclusiones
 Observaciones sobre el rendimiento del modelo inicial:
 Iniciamos trabajando con una red neuronal convolucional con 5 capas y sin hacer aumentó de datos, lo cual nos arrojaba una precisión baja, de alrededor de 0.5 y tardaba bastante en entrenarse, por lo que nos vimos en la necesidad de aumentar los datos con técnicas de aumento de datos y a probar diferentes estrategias, tales como el uso de redes pre entrenadas, variación en el número de capas y parámetros, balanceo de clases, etc.
