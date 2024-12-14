@@ -8,7 +8,7 @@
 
 ## Entegrables:
 
-1. [Memoria Técnica](dev_model/Memoria Tecnica.md)
+1. [Memoria Técnica](dev_model/MemoriaTecnica.md)
 
 ## Contexto
 Las emociones desempeñan un papel crucial en la comunicación humana, y su identificación automática tiene aplicaciones prácticas en campos como la atención al cliente, la educación, la salud mental y la industria del entretenimiento. Por ejemplo, los sistemas de atención al cliente pueden adaptarse en tiempo real según las emociones detectadas, o las plataformas educativas pueden personalizar contenidos basándose en el estado emocional del estudiante. Además, en psicología y medicina, el reconocimiento de emociones puede facilitar el diagnóstico y tratamiento de trastornos emocionales.
