@@ -17,8 +17,6 @@
   - [Objetivo](#objetivo)
   - [Introducción](#introducción)
 - [Fuentes de información y procedimientos aplicados](#fuentes-de-información-y-procedimientos-aplicados)
-  - [Construcción del modelo](#construcción-del-modelo)
-  - [Resultados modelo](#resultados-modelo)
   - [Pruebas sobre el modelo](#pruebas-sobre-el-modelo)
   - [Conclusiones](#conclusiones)
 - [Conclusiones generales](#conclusiones-generales)
@@ -70,12 +68,6 @@ Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi
 
   - **Total de imágenes:** 110,430
   - **Etiquetas:** Angry, Neutral, Disgust, Fear, Happy, Sad y Surprise
-
-## Construcción del modelo
-
-
-
-## Resultados modelo
 
 ## Pruebas sobre el modelo
 Una vez que corremos el modelo tenemos los siguientes resultados:
