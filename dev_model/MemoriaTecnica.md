@@ -77,7 +77,7 @@ Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi
 
 ## Resultados modelo
 
-![Precision](../images/precision.png)
+![Presicion](../images/presicion.png)
 
 ![Perdida](../images/perdida.png)
 
