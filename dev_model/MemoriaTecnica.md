@@ -102,7 +102,7 @@ La Clase 6 tiene el mejor rendimiento en términos de precisión, con 1309 predi
 ![Matriz de confusión](../images/matriz_confusion.png)
 
 Las métricas obtenidas después de ajustar los umbrales muestran una mejora en el rendimiento del modelo, con resultados más balanceados entre precisión y recall.
-
+![Metricas](../images/metricas.png)
 
 
 ## Conclusiones
