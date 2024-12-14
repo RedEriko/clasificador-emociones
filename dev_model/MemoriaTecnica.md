@@ -52,10 +52,10 @@ Nos da esta distribucion de las imagenes en las categorias dadas:
 
 ![Datos por categoria](../images/Grafica_de_datos.png)
 
-cual se puede ver que no estan equilibradas las categorias, lo cual causa pobremas en el entrenamiento de la CNN, en particular en la segunda categoria tiene muy pocas imagenes a comparacion de la demas, lo cual lleva a tener que procesar las imagenes para aumentar su numero, y como tambien eliminar imagenes de las otras categorias. 
+Las categorías del conjunto de datos presentan un desequilibrio significativo, lo que genera problemas durante el entrenamiento de la CNN. En particular, la segunda categoría cuenta con un número considerablemente menor de imágenes en comparación con las demás. Esto requiere aplicar técnicas de procesamiento para aumentar la cantidad de imágenes en las categorías con menor representación, mientras que, para las categorías con exceso de imágenes, se eliminan ejemplos de forma aleatoria.
 
-Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi llegar aumentar las categorias que tiene menor imagenes, y a los que tienen muchas imagenes se eliminan de manera aleatoria, asi se llega a que cada cateforia tenga 12006 imagenes, se logra tener una buena dataseht para el entrenamiento de la red CNN.
- 
+El procesamiento de imágenes incluye operaciones como ajustar el brillo, aplicar zoom, y realizar rotaciones. Estas transformaciones permiten incrementar la diversidad de las categorías subrepresentadas. Tras estos ajustes, se equilibraron todas las categorías, logrando que cada una cuente con 12,006 imágenes. Este proceso garantiza un conjunto de datos más balanceado y adecuado para el entrenamiento efectivo de la red CNN.
+
 ### 2. División del Conjunto de Datos
 - Los datos se dividen en prueba, entrenamiento y validación con proporciones del 20%, 60% y 20% respectivamente.
 
