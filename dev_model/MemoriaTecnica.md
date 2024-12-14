@@ -104,6 +104,14 @@ La Clase 6 tiene el mejor rendimiento en términos de precisión, con 1309 predi
 Las métricas obtenidas después de ajustar los umbrales muestran una mejora en el rendimiento del modelo, con resultados más balanceados entre precisión y recall.
 ![Metricas](../images/metricas.png)
 
+Precisión global (exactitud): 82.74%.
+El modelo clasifica correctamente el 82.74% de las instancias. Aunque es una métrica útil, debe evaluarse junto con otras, debido al desequilibrio de clases.
+
+F1-Score macro promedio: 0.8287.
+Esto indica un buen equilibrio general entre precisión y recall en todas las clases, considerando las diferencias en el soporte.
+
+F1-Score ponderado promedio: 0.83.
+Refleja el impacto de las clases con más datos en el rendimiento global del modelo.
 
 ## Conclusiones
 Observaciones sobre el rendimiento del modelo inicial:
