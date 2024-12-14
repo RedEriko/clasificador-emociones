@@ -71,9 +71,18 @@ Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi
   - **Total de imágenes:** 110,430
   - **Etiquetas:** Angry, Neutral, Disgust, Fear, Happy, Sad y Surprise
 
+## Construcción del modelo
+
+
+
+## Resultados modelo
+
+![Matriz_Confucion](../images/precision.png)
+
+![Matriz_Confucion](../images/perdida.png)
 
 ## Pruebas sobre el modelo
-
+![Matriz_Confucion](../images/matriz_confucion.png)
 La matriz muestra que algunas clases están más confundidas que otras. Las principales áreas de confusión entre clases incluyen:
 
 Clase 0 (Angry):
