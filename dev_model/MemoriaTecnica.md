@@ -77,10 +77,6 @@ Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi
 
 ## Resultados modelo
 
-![Presicion](../images/presicion.png)
-
-![Perdida](../images/perdida.png)
-
 ## Pruebas sobre el modelo
 Una vez que corremos el modelo tenemos los siguientes resultados:
 ![Entrenamiento](../images/rendimiento_2.png)
