@@ -72,7 +72,7 @@ Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi
   - **Etiquetas:** Angry, Neutral, Disgust, Fear, Happy, Sad y Surprise
 
 
-##Pruebas sobre el modelo
+## Pruebas sobre el modelo
 
 La matriz muestra que algunas clases están más confundidas que otras. Las principales áreas de confusión entre clases incluyen:
 
@@ -98,11 +98,11 @@ Clase 6 (Surprise):
 La Clase 6 tiene el mejor rendimiento en términos de precisión, con 1309 predicciones correctas. Sin embargo, también tiene algunas confusiones con Clase 3 y Clase 4. 
 
 
-##Conclusiones
+## Conclusiones
 Observaciones sobre el rendimiento del modelo inicial:
 Iniciamos trabajando con una red neuronal convolucional con 5 capas y sin hacer aumentó de datos, lo cual nos arrojaba una precisión baja, de alrededor de 0.5 y tardaba bastante en entrenarse, por lo que nos vimos en la necesidad de aumentar los datos con técnicas de aumento de datos y a probar diferentes estrategias, tales como el uso de redes pre entrenadas, variación en el número de capas y parámetros, balanceo de clases, etc.
 
-##Conclusiones generales
+## Conclusiones generales
 El modelo seleccionado tiene un buen desempeño global para identificar emociones en imágenes con una exactitud del 79%, pero hay algunas clases que están más confundidas que otras, especialmente la Clase 0 y la Clase 1, lo que podría indicar que esas clases tienen características similares que dificultan su separación.
 
 Podríamos mejorar el modelo si encontramos la forma de utilizar redes pre entrenadas, por ejemplo; o si podemos aumentar significativamente los datos de nuestro modelo. Esta última es la parte más complicada pues se necesitan demasiados datos y los datasets que existen en la red no son tan fiables ya que en muchos casos las categorías son ambiguas, las imágenes que vienen en alguna categoría no necesariamente describen lo que dice esta categoría y revisar cada una de estas, en conjuntos muy grandes, resulta ser una tarea pesada.
