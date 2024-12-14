@@ -77,12 +77,12 @@ Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi
 
 ## Resultados modelo
 
-![Matriz_Confucion](../images/precision.png)
+![Precision](../images/precision.png)
 
-![Matriz_Confucion](../images/perdida.png)
+![Perdida](../images/perdida.png)
 
 ## Pruebas sobre el modelo
-![Matriz_Confucion](../images/matriz_confucion.png)
+![Matriz_Confucion](../images/matriz_confusion.png)
 La matriz muestra que algunas clases están más confundidas que otras. Las principales áreas de confusión entre clases incluyen:
 
 Clase 0 (Angry):
