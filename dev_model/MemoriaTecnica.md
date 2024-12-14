@@ -71,6 +71,15 @@ Al procesaor las imagenes, es cambiar el brillo, hacer zoom o rotarlas, para asi
   - **Total de imágenes:** 110,430
   - **Etiquetas:** Angry, Neutral, Disgust, Fear, Happy, Sad y Surprise
 
+## Construcción del modelo
+
+
+
+## Resultados modelo
+
+![Precision](../images/precision.png)
+
+![Perdida](../images/perdida.png)
 
 ## Pruebas sobre el modelo
 Una vez que corremos el modelo tenemos los siguientes resultados:
