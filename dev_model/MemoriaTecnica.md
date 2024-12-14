@@ -52,9 +52,20 @@ A pesar de estos beneficios, el desarrollo de clasificadores de emociones plante
 
   | Conjunto         | Cantidad de Imágenes |
   |-------------------|----------------------|
-  | Entrenamiento     | 2,197               |
-  | Validación        | 550                 |
+  | Entrenamiento     | 66,258               |
+  | Validación        | 22,086               |
+  | Prueba            | 22,087               |
   
 
-  - **Total de imágenes:** 2,747
+  - **Total de imágenes:** 110,431
   - **Etiquetas:**
+# Mapeo de las etiquetas a las nuevas categorías numeradas
+label_mapping = {
+    'angry': 0,       # angry -> 0
+    'neutral': 1,      # neutral -> 1
+    'disgust': 2,      # disgust -> 2
+    'fear': 3,         # fear -> 3
+    'happy': 4,        # happy -> 4
+    'sad': 5,      # sad -> 5
+    'surprise': 6,     # surprise -> 6
+}
