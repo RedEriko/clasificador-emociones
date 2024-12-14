@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Copia el contenido del directorio actual en el contenedor en /app
-COPY ./api /app
+COPY ./app /app
 
 # Instalamos las dependencias de la aplicación desde el archivo requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
